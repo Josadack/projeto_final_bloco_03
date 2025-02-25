@@ -57,13 +57,13 @@ function FormCategoria() {
             try {
                 
                 await atualizar('/categorias', categoria, setCategoria) 
-                   ToastAlerta('A Categoria foi atualizado com sucesso!', 'sucesso')
+                ToastAlerta('A Categoria foi atualizado com sucesso!', 'sucesso')
 
             } catch (error: any) {
                 if(error.toString().includes('401')){
                     
                 }else{
-                     ToastAlerta('Erro ao atulizar o Categoria!', 'erro')
+                    ToastAlerta('Erro ao atulizar o Categoria!', 'erro')
                 }
             }
            }else {
@@ -76,7 +76,7 @@ function FormCategoria() {
                     if(error.toString().includes('401')){
 
                     }else{
-                         ToastAlerta('Erro ao atulizar o tema!' , 'erro')
+                        ToastAlerta('Erro ao atulizar o tema!' , 'erro')
                     }
                 }
                 

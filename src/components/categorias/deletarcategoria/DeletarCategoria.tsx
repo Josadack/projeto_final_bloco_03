@@ -44,12 +44,12 @@ function DeletarCategoria() {
         try {
            
             await deletar(`/categorias/${id}`,)
-               ToastAlerta('Categoria apagado com sucesso','sucesso')
+            ToastAlerta('Categoria apagado com sucesso','sucesso')
 
         } catch (error: any) {
             if(error.toString().includes('401')){
         }else{
-             ToastAlerta('Erro ao excluir Categoria', 'erro')
+            ToastAlerta('Erro ao excluir Categoria', 'erro')
         }
      }
 

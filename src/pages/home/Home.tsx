@@ -14,7 +14,7 @@ function Home() {
                         </p>
 
                         <div className="flex justify-around gap-4">
-                                 <ModalProduto/>
+                            <ModalProduto/>
                         </div>
                     </div>
 
